@@ -1,0 +1,477 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/ptsansnarrow.woff") format("woff"), url("../fonts/ptsansnarrow.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/ptsansnarrow.woff2") format("woff2"), url("../fonts/ptsansnarrow.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/ptsansnarrowbold.woff") format("woff"), url("/fonts/ptsansnarrowbold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/ptsansnarrowbold.woff2") format("woff2"), url("/fonts/ptsansnarrowbold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #000000;
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    min-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #000000;
+    border: none;
+    padding: 13px 34px 13px 34px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+
+.header-nav {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-nav__list,
+.header-nav__button {
+    list-style: none;
+}
+
+.header-nav__list a,
+.header-nav__button a {
+    color: #ffffff;
+}
+
+.header-nav__list a:hover,
+.header-nav__list a:focus,
+.header-nav__button a:hover,
+.header-nav__button a:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.header-nav__button {
+    margin-top: 13px;
+    padding-right: 179px;
+    position: relative;
+}
+
+.header-nav__button::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/login.svg);
+    width: 14px;
+    height: 14px;
+    left: 47px;
+    top: 16px;
+    opacity: 0.3;
+}
+
+.header-nav__list {
+    display: flex;
+    margin-left: 93px;
+    margin-top: 27px;
+}
+
+.features {
+    margin-top: 35px;
+}
+
+.features-list {
+    list-style: none;
+    display: flex;
+    padding-left: 144px;
+}
+
+.features-list li:nth-child(1) {
+    width: 301px;
+    padding-right: 21px;
+}
+
+.features-list li:nth-child(2) {
+    width: 317px;
+    padding-left: 22px;
+    padding-right: 20px;
+}
+
+.features-list li:nth-child(3) {
+    width: 304px;
+    padding-left: 23px;
+}
+
+.features-item {
+    text-align: center;
+}
+
+.features-item__title {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 62px;
+    position: relative;
+}
+
+.features-item__title::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    left: 129px;
+    top: 54px;
+    transform: rotate(45deg);
+
+}
+
+.index-columns {
+    color: #000000;
+    background-color: #f7f3f0;
+    /* background-image: url("img/pattern-light.jpg"); */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 940px;
+    height: 419px;
+    margin-top: 78px;
+    margin-left: 133px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.index-columns::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/Assets.png);
+    top: 81px;
+    left: 466px;
+    width: 8px;
+    height: 278px;
+
+}
+
+.news-title,
+.gallery-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.gallery {
+    padding-top: 16px;
+    padding-right: 36px;
+}
+
+.gallery-title {
+    margin-bottom: 0px;
+}
+
+.news-title {
+    margin-bottom: 20px;
+}
+
+.news-list {
+    list-style: none;
+    padding-left: 0px;
+    width: 344px;
+    padding-bottom: 31px;
+}
+
+.news-item time {
+    text-transform: none;
+}
+
+.news-item__text {
+    line-height: 1.71;
+    margin-bottom: 4px;
+}
+
+.news-list li:nth-child(2) {
+    padding-top: 15px;
+}
+
+.news {
+    padding-left: 81px;
+    padding-top: 17px;
+}
+
+.gallery-content {
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+    margin-left: 0px;
+    margin-top: 22px;
+}
+
+.contacts-title,
+.appointment-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.appointment-value {
+    font: inherit;
+    background: transparent;
+    border: solid 2px #000101;
+}
+
+.appointment-value:focus {
+    border-color: #663d15;
+}
+
+.footer {
+    background-color: #222222;
+    /* background-image: url("img/pattern-dark.jpg"); */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: 82px;
+    height: 193px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-list {
+    display: flex;
+    padding-top: 16px;
+    padding-left: 0px;
+}
+
+.footer-contacts {
+    padding-left: 133px;
+    padding-top: 47px;
+    line-height: 1.71;
+    padding-right: 45px;
+}
+
+.footer-socials {
+    text-align: center;
+    padding-left: 53px;
+    padding-right: 125px;
+    padding-top: 48px;
+}
+
+.socials-first {
+    padding: 14px 8px 13px 9px;
+}
+
+.socials-second {
+    padding: 19px 13px 7px 15px;
+}
+
+.socials-third {
+    padding: 17px 14px 9px 13px;
+}
+
+.footer-item {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.footer-developers {
+    text-align: center;
+    margin-left: 119px;
+    margin-top: 49px;
+}
+
+.developers {
+    padding: 16px 28px 17px 29px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.footer-developers button:hover,
+.footer-developers button:focus {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.modal {
+    color: #000000;
+    background-color: #f8f3f0;
+    /* background-image: url("img/pattern-light.jpg"); */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 460px;
+    height: 385px;
+}
+
+.modal-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.modal-form input[type="text"],
+.modal-form input[type="password"] {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f9f6f3;
+    border: solid 2px #000101;
+}
+
+.modal-form input:focus {
+    border-color: #663d15;
+}
+
+.login-password-info checkbox:hover,
+.login-password-info checkbox:focus {
+    border-color: #663d15;
+}
+
+.modal-link {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.modal-link:hover,
+.modal-link:focus {
+    text-decoration: none;
+}
+
+.header-nav__logo {
+    width: 371px;
+    height: 155px;
+}
+
+.map-img {
+    width: 766px;
+    height: 560px;
+    border: 7px solid #ffffff;
+}
+
+.header-nav__item {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.header {
+    min-height: 285px;
+}
+
+.header-wrapper {
+    display: flex;
+    background-color: black;
+    height: 72px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-nav__wrapper {
+    padding-top: 61px;
+    padding-right: 54px;
+}
+
+.features-item__text {
+    line-height: 1.71;
+}
+
+.contacts-description {
+    line-height: 1.71;
+}
+
+.contacts {
+    padding-left: 80px;
+    width: 80%;
+}
+
+.appointment-info {
+    line-height: 1.71;
+}
+
+.appointment input {
+    padding: 16px 31px 15px 15px;
+    border: solid 2px #000101;
+}
+
+.appointment {
+    width: 100%;
+}
+
+.back {
+    margin-top: 21px;
+    padding: 14px 52px;
+    margin-right: 0px;
+}
+
+.forward {
+    padding: 14px 49px;
+    margin-left: 15px;
+    margin-top: 21px;
+
+}
+
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.appointment__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
