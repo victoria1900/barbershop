@@ -79,12 +79,13 @@ ul {
     background-color: #000000;
     border: none;
     padding: 13px 34px 13px 34px;
+    cursor: pointer;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-    background-color: #242424;
+    background-color: #673d15;
     color: #ffffff;
 }
 
@@ -107,13 +108,14 @@ ul {
     color: #ffffff;
 }
 
-.header-nav__list a:hover,
+/* .header-nav__list a:hover,
 .header-nav__list a:focus,
 .header-nav__button a:hover,
 .header-nav__button a:focus {
-    color: #000000;
-    background-color: #ffffff;
-}
+    background-color: #242424;
+    color: #ffffff;
+    padding: 20px 10px 20px 10px;
+} */
 
 .header-nav__button {
     margin-top: 13px;
@@ -195,11 +197,16 @@ ul {
     background-repeat: no-repeat;
     display: flex;
     width: 940px;
-    height: 419px;
+    height: 420px;
     margin-top: 78px;
     margin-left: 133px;
     justify-content: space-between;
     position: relative;
+}
+
+.index-columns-contacts {
+    margin-top: 37px;
+    height: 432px;
 }
 
 .index-columns::after {
@@ -270,7 +277,21 @@ ul {
     line-height: 42px;
 }
 
-.appointment-value {
+.appointment-title {
+    margin-bottom: 21px;
+}
+
+.contacts-title {
+    margin-bottom: 21px;
+}
+
+.contacts-time {
+    line-height: 1.71;
+    padding-top: 11px;
+    padding-bottom: 20px;
+}
+
+/* .appointment-value {
     font: inherit;
     background: transparent;
     border: solid 2px #000101;
@@ -278,7 +299,7 @@ ul {
 
 .appointment-value:focus {
     border-color: #663d15;
-}
+} */
 
 .footer {
     background-color: #222222;
@@ -286,7 +307,7 @@ ul {
     background-position: 0 0;
     background-repeat: no-repeat;
     display: flex;
-    margin-top: 82px;
+    margin-top: 67px;
     height: 193px;
 }
 
@@ -334,14 +355,20 @@ ul {
 
 .footer-developers {
     text-align: center;
-    margin-left: 119px;
-    margin-top: 49px;
+    margin-left: 124px;
+    margin-top: 62px;
 }
 
 .developers {
-    padding: 16px 28px 17px 29px;
+    padding: 16px 31px 15px 29px;
     color: #ffffff;
     background-color: #000000;
+    margin-top: 14px;
+}
+
+.developers:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .footer-developers button:hover,
@@ -350,14 +377,8 @@ ul {
     background-color: #000000;
 }
 
-.modal {
-    color: #000000;
-    background-color: #f8f3f0;
-    /* background-image: url("img/pattern-light.jpg"); */
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 460px;
-    height: 385px;
+.footer-wrapper {
+    display: grid;
 }
 
 .modal-title {
@@ -372,11 +393,12 @@ ul {
     text-transform: uppercase;
     background-color: #f9f6f3;
     border: solid 2px #000101;
+    padding: 12px 117px 15px 20px;
 }
 
-.modal-form input:focus {
+/* .modal-form input:focus {
     border-color: #663d15;
-}
+} */
 
 .login-password-info checkbox:hover,
 .login-password-info checkbox:focus {
@@ -402,6 +424,51 @@ ul {
     width: 766px;
     height: 560px;
     border: 7px solid #ffffff;
+}
+
+.map {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 30px 50px 0 rgba(0, 1, 1, 0.75);
+    display: none;
+}
+
+.map-close {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 0px;
+    left: 771px;
+    background-color: transparent;
+    border: none;
+}
+
+.map-show {
+    display: block;
+}
+
+.map-close::before,
+.map-close::after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 3px;
+    background-color: #d0d0d0;
+    top: 6px;
+    left: -2px;
+    cursor: pointer;
+}
+
+.map-close::before {
+    transform: rotate(45deg);
+}
+
+.map-close::after {
+    transform: rotate(-45deg);
 }
 
 .header-nav__item {
@@ -435,21 +502,116 @@ ul {
 }
 
 .contacts {
-    padding-left: 80px;
+    padding-left: 82px;
     width: 80%;
+    padding-top: 13px;
+}
+
+.button-contacts {
+    background-color: #000000;
+    padding: 13px 28px 13px 34px;
+    margin-right: 7px;
+}
+
+.button-contacts-second {
+    background-color: #000000;
+    padding: 13px 28px 13px 26px;
+    margin-left: 7px;
 }
 
 .appointment-info {
     line-height: 1.71;
 }
 
-.appointment input {
-    padding: 16px 31px 15px 15px;
+.appointment-input-date {
+    padding: 4px 2px 15px 10px;
     border: solid 2px #000101;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.appointment-input-date:hover,
+.appointment-input-date:focus {
+    border: solid 2px #673d15;
+}
+
+.appointment-input-tel:focus,
+.appointment-input-tel:hover {
+    border: solid 2px #673d15;
+}
+
+.appointment-input-time:focus,
+.appointment-input-time:hover {
+    border: solid 2px #673d15;
+}
+
+.appointment-input-text:focus,
+.appointment-input-text:hover {
+    border: solid 2px #673d15;
+}
+
+.appointment-input-time {
+    padding: 4px 52px 15px 24px;
+    border: solid 2px #000101;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.appointment-input-text {
+    padding: 8px 1px 15px 2px;
+    border: solid 2px #000101;
+    background-color: white;
+}
+
+.appointment-input-tel {
+    padding: 8px 1px 15px 2px;
+    border: solid 2px #000101;
+    background-color: white;
+}
+
+.appointment-grid-date,
+.appointment-grid-time,
+.appointment-grid-text,
+.appointment-grid-tel {
+    display: grid;
+}
+
+.appointment-grid-date {
+    padding-right: 7px;
+    margin-bottom: 0px;
+}
+
+.appointment-grid-time {
+    padding-left: 12px;
+    margin-bottom: 0px;
+}
+
+.appointment-grid-text {
+    padding-right: 10px;
+}
+
+.appointment-grid-tel {
+    padding-left: 9px;
 }
 
 .appointment {
     width: 100%;
+    padding-left: 158px;
+    padding-top: 13px;
+}
+
+.appointment-date,
+.appointment-time,
+.appointment-text,
+.appointment-tel {
+    margin-bottom: 11px;
+    padding-left: 16px;
+}
+
+.send {
+    padding: 15px 131px 13px 107px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
 .back {
@@ -468,10 +630,72 @@ ul {
 .contacts-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 36px;
 }
 
 .appointment__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 12px;
+    padding-top: 1px;
+}
+
+.button-login {
+    padding: 17px 136px 13px 142px;
+    background-color: #000000;
+}
+
+.modal {
+    color: #000000;
+    background-color: #f8f3f0;
+    /* background-image: url("img/pattern-light.jpg"); */
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 460px;
+    height: 385px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 30px 50px 0 rgba(0, 1, 1, 0.75);
+    display: none;
+}
+
+.button-close {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 1px;
+    left: 468px;
+    background: transparent;
+}
+
+.button-close::before,
+.button-close::after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 3px;
+    background-color: #d0d0d0;
+    top: 7px;
+    left: 0px;
+}
+
+.button-close::before {
+    transform: rotate(45deg);
+}
+
+.button-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-password,
+.modal-login {
+    visibility: hidden;
+}
+
+.modal-show {
+    display: block;
 }

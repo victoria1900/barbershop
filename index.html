@@ -21,7 +21,8 @@
                     <li class="header-nav__item"><a class="header-nav__contacts" href="#">КОНТАКТЫ</a></li>
                 </ul>
                 <ul class="header-nav__button">
-                    <li class="header-nav__item-button"><button class="button" type="button">ВХОД</button></li>
+                    <li class="header-nav__item-button"><button class="button button__login" type="button">ВХОД</button>
+                    </li>
                 </ul>
             </div>
             <div class="header-nav__wrapper">
@@ -55,8 +56,8 @@
                 </li>
             </ul>
         </section>
-        <div class="index-columns">
-            <section class="news">
+        <section class="index-columns">
+            <div class="news">
                 <p class="news-title">НОВОСТИ</p>
                 <ul class="news-list">
                     <li class="news-item">
@@ -73,8 +74,8 @@
                     </li>
                 </ul>
                 <a class="button" href="#">ВСЕ НОВОСТИ</a>
-            </section>
-            <section class="gallery">
+            </div>
+            <div class="gallery">
                 <p class="gallery-title">ФОТОГАЛЕРЕЯ</p>
                 <figure class="gallery-content">
                     <a class="gallery-link" href="#">
@@ -83,9 +84,9 @@
                 </figure>
                 <button class="back button" type="button">Назад</button>
                 <button class="forward button" type="button">Вперед</button>
-            </section>
-        </div>
-        <section class="index-columns container">
+            </div>
+        </section>
+        <section class="index-columns index-columns-contacts container">
             <div class="contacts-wrapper ">
                 <div class="contacts">
                     <p class="contacts-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</p>
@@ -95,35 +96,36 @@
                     <p class="contacts-time">ВРЕМЯ РАБОТЫ:<br>
                         ПН—ПТ: С 10:00 ДО 22:00<br>
                         СБ—ВС: С 10:00 ДО 19:00</p>
-                    <a class="button" href="#">КАК ПРОЕХАТЬ</a>
-                    <a class="button" href="#">ОБРАТНАЯ СВЯЗЬ</a>
+                    <a class="button-contacts button " href="#">КАК ПРОЕХАТЬ</a>
+                    <a class="button-contacts-second button " href="#">ОБРАТНАЯ СВЯЗЬ</a>
 
                 </div>
                 <div class="appointment">
                     <p class="appointment-title">ЗАПИСАТЬСЯ</p>
-                    <span class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ
+                    <span class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ <br> С ВАМИ ДЛЯ
+                        ПОДТВЕРЖДЕНИЯ
                         БРОНИ</span>
                     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
                         <div class="appointment__wrapper">
-                            <p>
-                                <label class="appointment-date" for="date">ДАТА </label>
-                                <input class="appointment-date" type="date" name="date" value="2017-08-10">
+                            <p class="appointment-grid-date">
+                                <label class="appointment-date" id="date">ДАТА </label>
+                                <input class="appointment-input-date" type="date" name="date" value="2017-08-10">
                             </p>
-                            <p>
-                                <label class="appointment-time" for="time">ВРЕМЯ </label>
-                                <input class="appointment-time" type="time" name="time" value="10:00">
+                            <p class="appointment-grid-time">
+                                <label class="appointment-time" id="time">ВРЕМЯ </label>
+                                <input class="appointment-input-time" type="time" name="time" value="10:00">
                             </p>
-                            <p>
-                                <label class="appointment-text" for="text">ВАШЕ ИМЯ</label>
-                                <input class="appointment-text" type="text" name="text" placeholder="Борода">
+                            <p class="appointment-grid-text">
+                                <label class="appointment-text" id="text">ВАШЕ ИМЯ</label>
+                                <input class="appointment-input-text" type="text" name="text" placeholder="Борода">
                             </p>
-                            <p>
-                                <label class="appointment-tel" for="tel">ТЕЛЕФОН</label>
-                                <input class="appointment-tel" type="tel" name="phone" value=""
+                            <p class="appointment-grid-tel">
+                                <label class="appointment-tel" id="tel">ТЕЛЕФОН</label>
+                                <input class="appointment-input-tel" type="tel" name="phone" value=""
                                     placeholder="+7 123 456-78-90">
                             </p>
                         </div>
-                        <button class="button" type="submit">ОТПРАВИТЬ</button>
+                        <button class="button send" type="submit">ОТПРАВИТЬ</button>
                     </form>
                 </div>
             </div>
@@ -138,22 +140,25 @@
             <div class="footer-socials">
                 <p class="footer-title">ДАВАЙТЕ ДРУЖИТЬ!</p>
                 <ul class="footer-list">
-                    <li class="footer-item"><a class="socials-first button" href="#"><img src="img/vk.svg" alt="vk"></a>
+                    <li class="footer-item"><a class="socials-first button" href="#"><img class="socials-img"
+                                src="img/vk.svg" alt="vk"></a>
                     </li>
-                    <li class="footer-item"><a class="socials-second button" href="#"><img src="img/facebook.svg"
-                                alt="facebook"></a></li>
-                    <li class="footer-item"><a class="socials-third button" href="#"><img src="img/instagram.svg"
-                                alt="instagram"></a></li>
+                    <li class="footer-item"><a class="socials-second button" href="#"><img class="socials-img"
+                                src="img/facebook.svg" alt="facebook"></a></li>
+                    <li class="footer-item"><a class="socials-third button" href="#"><img class="socials-img"
+                                src="img/instagram.svg" alt="instagram"></a></li>
                 </ul>
             </div>
-            <p class="footer-developers">
-                РАЗРАБОТАНО:
-                <a class="developers" href="https://htmlacademy.ru/">html academy</a>
-            </p>
+            <div class="footer-developers">
+                <div class="footer-wrapper">
+                    РАЗРАБОТАНО:
+                    <a class="developers" href="https://htmlacademy.ru/">html academy</a>
+                </div>
+            </div>
         </footer>
-        <section class="modal modal-login">
+        <section class="modal">
             <p class="modal-title">ЛИЧНЫЙ КАБИНЕТ</p>
-            <span class="modal-text">Введите пожалуйста свой логин и пароль</span>
+            <span class="modal-text-login">Введите пожалуйста свой логин и пароль</span>
             <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
 
                 <p class="modal-login-info">
@@ -170,16 +175,19 @@
 
                     <a class="modal-link" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
                 </p>
-                <button class="button" type="submit">ВОЙТИ</button>
+
+                <button class="button button__login" type="submit">ВОЙТИ</button>
             </form>
-            <p class="modal-close"><button type="button">Закрыть</button></p>
+            <p class="modal-close"><button class="button-close" type="button"></button></p>
+
         </section>
-        <section class="map map-show">
+        <section class="map">
             <img class="map-img" src="img/map.jpg" alt="map">
-            <button class="map-close" type="button">Закрыть</button>
+            <button class="map-close" type="button"></button>
         </section>
     </main>
-
+    <script src="js/modal.js"></script>
+    <!-- <script src="js/map.js"></script> -->
 </body>
 
 </html>
