@@ -1,4 +1,4 @@
-var link = document.querySelector(".button__login");
+var link = document.querySelector(".header-nav__button-login");
 var popup = document.querySelector(".modal");
 var close = document.querySelector(".button-close");
 

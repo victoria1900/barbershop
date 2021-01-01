@@ -83,7 +83,6 @@ ul {
 }
 
 .button:hover,
-.button:focus,
 .button:active {
     background-color: #673d15;
     color: #ffffff;
@@ -98,6 +97,34 @@ ul {
     font-weight: bold;
 }
 
+.header-nav__price:hover,
+.header-nav__shop:hover,
+.header-nav__info:hover,
+.header-nav__news:hover,
+.header-nav__contacts:hover {
+    background-color: #242424;
+}
+
+.header-nav__price {
+    padding: 29px 20px 25px 20px;
+}
+
+.header-nav__shop {
+    padding: 29px 20px 25px 20px;
+}
+
+.header-nav__info {
+    padding: 29px 20px 25px 20px;
+}
+
+.header-nav__news {
+    padding: 29px 20px 25px 20px;
+}
+
+.header-nav__contacts {
+    padding: 29px 20px 25px 20px;
+}
+
 .header-nav__list,
 .header-nav__button {
     list-style: none;
@@ -108,19 +135,11 @@ ul {
     color: #ffffff;
 }
 
-/* .header-nav__list a:hover,
-.header-nav__list a:focus,
-.header-nav__button a:hover,
-.header-nav__button a:focus {
-    background-color: #242424;
-    color: #ffffff;
-    padding: 20px 10px 20px 10px;
-} */
 
 .header-nav__button {
-    margin-top: 13px;
-    padding-right: 179px;
+    margin-right: 170px;
     position: relative;
+    margin-top: 0px;
 }
 
 .header-nav__button::before {
@@ -130,7 +149,7 @@ ul {
     width: 14px;
     height: 14px;
     left: 47px;
-    top: 16px;
+    top: 31px;
     opacity: 0.3;
 }
 
@@ -340,12 +359,33 @@ ul {
     padding: 14px 8px 13px 9px;
 }
 
+.socials-first:hover {
+    background-color: #ffffff;
+
+}
+
 .socials-second {
     padding: 19px 13px 7px 15px;
 }
 
+.socials-second:hover {
+    background-color: #ffffff;
+}
+
+.socials-svg {
+    fill: #ffffff;
+}
+
+.socials-svg:hover {
+    fill: #000000;
+}
+
 .socials-third {
     padding: 17px 14px 9px 13px;
+}
+
+.socials-third:hover {
+    background-color: #ffffff;
 }
 
 .footer-item {
@@ -384,7 +424,22 @@ ul {
 .modal-title {
     font-size: 30px;
     line-height: 42px;
+    padding-left: 81px;
+    padding-top: 50px;
+    padding-bottom: 28px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
+
+.modal-text-login {
+    padding-left: 81px;
+}
+
+.modal-text {
+    width: 300px;
+}
+
+
 
 .modal-form input[type="text"],
 .modal-form input[type="password"] {
@@ -405,9 +460,17 @@ ul {
     border-color: #663d15;
 }
 
+.login-password-info {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 80px;
+    margin-bottom: 0px;
+}
+
 .modal-link {
     color: #000000;
     text-decoration: underline;
+    padding-left: 75px;
 }
 
 .modal-link:hover,
@@ -469,11 +532,6 @@ ul {
 
 .map-close::after {
     transform: rotate(-45deg);
-}
-
-.header-nav__item {
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 .header {
@@ -639,9 +697,29 @@ ul {
     padding-top: 1px;
 }
 
-.button-login {
-    padding: 17px 136px 13px 142px;
+.header-nav__button-login {
     background-color: #000000;
+    padding: 29px 20px 29px 24px;
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #000000;
+    border: none;
+    padding: 28px 42px 24px 42px;
+    cursor: pointer;
+}
+
+.header-nav__button-login:hover {
+    background-color: #242424;
+}
+
+.button-login {
+    margin-left: 80px;
+    width: 300px;
+    height: 43px;
+    margin-top: 20px;
 }
 
 .modal {
@@ -696,6 +774,51 @@ ul {
     visibility: hidden;
 }
 
+.modal-login-info {
+    padding-left: 42px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 16px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.modal-login-info::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/user.svg);
+    width: 13px;
+    height: 13px;
+    top: 30px;
+    left: 353px;
+}
+
+.modal-password-info {
+    padding-left: 36px;
+    margin-top: 0px;
+    padding-top: 9px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.modal-password-info::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/lock.svg);
+    width: 13px;
+    height: 13px;
+    top: 25px;
+    left: 353px;
+}
+
 .modal-show {
     display: block;
+}
+
+.modal-text::placeholder {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    text-align: left;
+    color: #000000;
 }
