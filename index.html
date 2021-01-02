@@ -21,7 +21,7 @@
                     <li class="header-nav__item"><a class="header-nav__contacts" href="#">КОНТАКТЫ</a></li>
                 </ul>
                 <ul class="header-nav__button">
-                    <li class="header-nav__item-button"><button class="header-nav__button-login"
+                    <li class="header-nav__item-button"><button class="header-nav__button-login btn-login"
                             type="button">ВХОД</button>
                     </li>
                 </ul>
@@ -110,11 +110,11 @@
                         <div class="appointment__wrapper">
                             <p class="appointment-grid-date">
                                 <label class="appointment-date" id="date">ДАТА </label>
-                                <input class="appointment-input-date" type="date" name="date" value="2017-08-10">
+                                <input class="appointment-input-date" placeholder="08.10.2017" type="text" name="date">
                             </p>
                             <p class="appointment-grid-time">
                                 <label class="appointment-time" id="time">ВРЕМЯ </label>
-                                <input class="appointment-input-time" type="time" name="time" value="10:00">
+                                <input class="appointment-input-time" placeholder="10:00" type="text" name="time">
                             </p>
                             <p class="appointment-grid-text">
                                 <label class="appointment-text" id="text">ВАШЕ ИМЯ</label>
@@ -180,7 +180,7 @@
                     <input class="modal-text" type="password" placeholder="ПАРОЛЬ" name="password" id="password">
                 </p>
                 <p class="login-password-info">
-                    <input class="checkbox" type="checkbox" name="remember" id="remember">
+                    <input class="checkbox visually-hidden" type="checkbox" name="remember" id="remember">
                     <label class="remember" for="remember">ЗАПОМНИТЕ МЕНЯ</label>
 
                     <a class="modal-link" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
